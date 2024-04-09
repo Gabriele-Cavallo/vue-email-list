@@ -10,7 +10,9 @@
 <body>
     <!-- Vue-JS HTML Container -->
     <div id="app">
-        
+        <ul class="email-list">
+            <a v-if="emailsArray.length === 10" v-for="email in emailsArray">{{email}}</a>
+        </ul>
     </div>
     <!-- /Vue-JS HTML Container -->
     <!-- Vue-JS Script -->
